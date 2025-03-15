@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Điểm Học sinh</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="js.js" defer></script>
+</head>
+<body>
+    <div class="div1">
+        <div id="clock"></div>
+    </div>
+    <div class="div2">
+        <div class="dangnhap">
+            <h1> Đăng Nhập</h1>
+            <label for="">Tên tài khoản</label> </br></br>
+            <input type="text" placeholder="Nhập tên" id ="name"></br></br>
+            <label for="">Mật khẩu</label></br></br>
+            <input type="password" placeholder="Nhập mật khẩu" id="password"></br></br>
+            <button id="login">Đăng nhập</button></br></br>
+            <button id="logout">Đăng kí </button>
+            <h4> Nhân tài như lá mùa thu!</h4>
+            <h4>Luyến tiếc cái gì?</h4>
+        </div>
+        <div class="logo">
+            <div id="qrcode"></div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+            <script>
+                 new QRCode(document.getElementById("qrcode"),{
+                    text:"https://dotfic.com/zDyk",
+                    width: 100, 
+                    height: 100 
+                 });
+            </script>
+            <div id="link">
+                <a href="https://www.garena.vn/" target="_blank">toáncaocấp.udenv</a><br>
+                <a href="https://hocbadientu.vnedu.vn/tracuu_v2/" target="_blank">hocbadientu.udenv</a><br>
+                <a href="https://github.com/" target="_blank">github.com</a>
+            </div>
+    
+        </div>
+    </div>    
+</body>
+</html>
