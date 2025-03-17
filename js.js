@@ -59,20 +59,4 @@ function typeEffect() {
         document.getElementById("text").style.borderRight = "none";
     }
 };
-function changeImage() {
-    let img = document.getElementById("img");
-    img.src = "t2.png";
-
-    let start = Date.now(); 
-
-    function revertImage() {
-        if (Date.now() - start >= 200) {
-            img.src = "t1.png";
-        } else {
-            requestAnimationFrame(revertImage);
-        }
-    }
-
-    requestAnimationFrame(revertImage);
-}
 
