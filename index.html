@@ -9,7 +9,12 @@
 </head>
 <body>
     <div class="div1">
+        <div id="load1"></div>
         <div id="clock"></div>
+        <div id="load2">
+            <!-- <h3>  ⚠️ SYSTEM HACKED! ⚠️ </h3> -->
+            <div class="paper" id="text"></div>
+        </div>
     </div>
     <div class="div2">
         <div class="dangnhap">
@@ -36,9 +41,19 @@
             <div id="link">
                 <a href="https://www.garena.vn/" target="_blank">toáncaocấp.udenv</a><br>
                 <a href="https://hocbadientu.vnedu.vn/tracuu_v2/" target="_blank">hocbadientu.udenv</a><br>
-                <a href="https://github.com/" target="_blank">github.com</a>
+                <a href="https://github.com/megatron103" target="_blank">github.com</a>
             </div>
-    
+            <img id="img" src="t1.png"  onclick="changeImage()">
+            <script>
+                function changeImage() {
+                    let img = document.getElementById("img");
+                    img.src = "t2.png";
+                    setTimeout(() => {
+                        img.src = "t1.png";
+                       }, 200);
+                }
+                
+            </script>
         </div>
     </div>    
 </body>
