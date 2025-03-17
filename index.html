@@ -45,13 +45,23 @@
             </div>
             <img id="img" src="t1.png"  onclick="changeImage()">
             <script>
-                function changeImage() {
+                 function changeImage() {
                     let img = document.getElementById("img");
                     img.src = "t2.png";
-                    setTimeout(() => {
-                        img.src = "t1.png";
-                       }, 200);
-                }
+                
+                    let start = performance.now();
+                
+                    function revertImage(timestamp) {
+                        if (timestamp - start >= 200) {
+                            img.src = "t1.png";
+                        } else {
+                            requestAnimationFrame(revertImage);
+                        }
+                    }
+
+    requestAnimationFrame(revertImage);
+}
+
                 
             </script>
         </div>
