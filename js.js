@@ -67,13 +67,14 @@ new QRCode(document.getElementById("qrcode"),{
 let img = document.getElementById("img");
 
 img.addEventListener("click", function () {
-    img.src = "cmm.png?" + new Date().getTime(); 
+    img.src = "cmm.png";
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            img.src = "t1.png";
+        });
+    });
 });
-img.addEventListener("load", function () {
-    setTimeout(() => {
-        img.src = "t1.png?" + new Date().getTime();
-    }, 50);
-});
+
 
 
 
