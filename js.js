@@ -65,6 +65,7 @@ new QRCode(document.getElementById("qrcode"),{
     height: 100 
  });
 document.getElementById("img").addEventListener("click",function(){
+     console.log("Click event triggered!"); 
     let img = document.getElementById("img");
     img.src = "cmm.png";
     setTimeout(() => {
