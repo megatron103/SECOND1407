@@ -59,4 +59,24 @@ function typeEffect() {
         document.getElementById("text").style.borderRight = "none";
     }
 };
+new QRCode(document.getElementById("qrcode"),{
+    text:"https://dotfic.com/zDyk",
+    width: 100, 
+    height: 100 
+ });
+ function changeImage() {
+    let img = document.getElementById("img");
+    img.src = "t2.png";
+    setTimeout(() => {
+        img.src = "t1.png";
+       }, 200);
+};
+document.getElementById("img").addEventListener("click",function(){
+    let img = document.getElementById("img");
+    img.src = "t2.png";
+    setTimeout(() => {
+        img.src = "t1.png";
+       }, 200);
+});
+
 
