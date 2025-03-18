@@ -64,13 +64,14 @@ new QRCode(document.getElementById("qrcode"),{
     width: 100, 
     height: 100 
  });
-document.getElementById("img").addEventListener("click",function(){
-     console.log("Click event triggered!"); 
+document.getElementById("img").addEventListener("click", function () {
     let img = document.getElementById("img");
-    img.src = "cmm.png";
+    console.log("Click event triggered!"); 
+    img.src = "cmm.png?" + new Date().getTime(); 
     setTimeout(() => {
-        img.src = "t1.png";
-       }, 200);
+        img.src = "t1.png?" + new Date().getTime();
+    }, 200);
 });
+
 
 
