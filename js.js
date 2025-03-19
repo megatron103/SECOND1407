@@ -71,6 +71,7 @@ anh.addEventListener("click", function () {
     anh.onload = () => { 
         setTimeout(() => {
             anh.src = "t1.png";
+            anh.onload = null;
         }, 100);
     };
 });
