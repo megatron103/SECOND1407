@@ -65,6 +65,7 @@ new QRCode(document.getElementById("qrcode"),{
     height: 100 
  });
 img.addEventListener("click", function () {
+    console.log("Đang đổi ảnh:", img.src);
     img.src = "cmm.png";
     setTimeout(() => {
         img.src = "t1.png";
