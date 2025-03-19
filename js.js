@@ -68,9 +68,9 @@ let anh = document.getElementById("vcl");
 
 anh.addEventListener("click", function () {
     anh.src = "cmm.png";
-    setTimeout(() => {
-        anh.src = "t1.png";
-    }, 200);
+        setTimeout(function () {
+            anh.src = "t1.png";
+        }, 200);
 });
 
 
