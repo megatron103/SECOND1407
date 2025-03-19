@@ -72,7 +72,7 @@ anh.addEventListener("click", function () {
         setTimeout(() => {
             anh.src = "t1.png";
             anh.onload = null;
-        }, 100);
+        }, 150);
     };
 });
 
