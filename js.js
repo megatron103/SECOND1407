@@ -64,14 +64,14 @@ new QRCode(document.getElementById("qrcode"),{
     width: 100, 
     height: 100 
  });
-img.addEventListener("click", function () {
-    console.log("Đang đổi ảnh:", img.src);
-    img.src = "cmm.png";
+let anh = document.getElementById("vcl");
+
+anh.addEventListener("click", function () {
+    anh.src = "cmm.png";
     setTimeout(() => {
-        img.src = "t1.png";
+        anh.src = "t1.png";
     }, 200);
 });
-
 
 
 
