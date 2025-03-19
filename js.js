@@ -67,7 +67,7 @@ new QRCode(document.getElementById("qrcode"),{
 let anh = document.getElementById("vcl");
 
 anh.addEventListener("click", function () {
-    anh.src = "cmm.png";
+    anh.src = "t2.png";
         setTimeout(function () {
             anh.src = "t1.png";
         }, 200);
