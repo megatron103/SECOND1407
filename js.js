@@ -64,15 +64,11 @@ new QRCode(document.getElementById("qrcode"),{
     width: 100, 
     height: 100 
  });
-let img = document.getElementById("img");
-
 img.addEventListener("click", function () {
     img.src = "cmm.png";
-    requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-            img.src = "t1.png";
-        });
-    });
+    setTimeout(() => {
+        img.src = "t1.png";
+    }, 200);
 });
 
 
